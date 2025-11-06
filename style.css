@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+@import url('https://fonts.cdnfonts.com/css/repetition-scrolling');
+@import url('https://fonts.cdnfonts.com/css/clear-sans');
+@media (max-width: 600px) {
+    .navcontent ul {
+    display: none;
+}
+
+.menubutton1 button{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    position: static;
+}
+
+.menubutton1 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menubutton1 #menucontent1{
+    display: none;
+    background-color: hsl(0, 0%, 95%);
+    position: absolute;
+    top: 120%;
+    left: auto;
+    right: 0%;
+    transform: translateX(20px);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.navcontent a {
+    display: none;
+}
+
+.navcontent {
+  display: none;
+}
+
+.title {
+        font-size: 1.5rem;
+    }
+
+.title span {
+        font-size: 1.9rem; 
+    }
+
+}
+
+.menubutton1 {
+    display: none
+}
+
+.menucontent1 {
+    display: none}
+
+.card {
+  flex: 1 1 100%; 
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: 'Roboto', 'Lexend Deca', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #090900;
+    z-index: 0;
+}
+
+nav {
+    background-color: #ffffff;
+    color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #101010;
+    color: #f9f9f9;
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: 600;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 20px;
+    position: relative;
+}
+
+.navcontent ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navcontent a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 500;
+    font-size: 15pt;
+    font-family: 'Minecraft', sans-serif;
+    cursor: pointer;
+    -webkit-transition: .5 ease-in-out;
+    -moz-transition: .5 ease-in-out;
+    -ms-transition: .5 ease-in-out;
+    -o-transition: .5 ease-in-out;
+    transition: .5 ease-in-out;
+}
+
+.navcontent {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navcontent a:hover {
+    color: #adadad;
+}
+
+.navcontent a:active {
+    color: #646464
+}
+
+.logo {
+    flex: 1;
+    font-size: 24pt;
+    font-weight: 800;
+    font-family: 'lexend deca', serif;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: px;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.project-img img {
+    height: 300px;
+    width: 300px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Repetition Scrolling', sans-serif;
+    color: #adadad;
+}
+
+.title span {
+    color: #68020f;
+    font-family: 'Clear Sans Medium', sans-serif;
+    font-weight: 900;
+}
+
+
+#landing {
+    background: #ededed;
+    background: linear-gradient(180deg, rgba(237, 237, 237, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    color: #f9f9f9;
+    height: calc(90vh);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    -webkit-box-shadow: 1px 19px 25px 9px rgba(0,0,0,0.71);
+    -moz-box-shadow: 1px 19px 25px 9px rgba(0,0,0,0.71);
+    box-shadow: 1px 19px 25px 9px rgba(0,0,0,0.71);
+    }
+
+
+.menubutton button{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    position: static;
+}
+
+.menubutton a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menubutton #menucontent{
+    display: none;
+    background-color: hsl(0, 0%, 95%);
+    position: absolute;
+    top: 120%;
+    left: auto;
+    right: 0%;
+    transform: translateX(20px);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+.project-link {
+    width: 150px;
+    margin-top: auto;
+    z-index: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
