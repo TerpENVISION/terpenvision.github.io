@@ -2,6 +2,12 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
 @import url('https://fonts.cdnfonts.com/css/repetition-scrolling');
 @import url('https://fonts.cdnfonts.com/css/clear-sans');
+
+
+.taskmobile {
+    display: none;
+}
+
 @media (max-width: 600px) {
     .navcontent ul {
     display: none;
@@ -42,6 +48,63 @@
   display: none;
 }
 
+.navmo {
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.taskmobile {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+
+.taskmobile ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.taskmobile a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 500;
+    font-size: 15pt;
+    font-family: 'Minecraft', sans-serif;
+    cursor: pointer;
+    -webkit-transition: .5 ease-in-out;
+    -moz-transition: .5 ease-in-out;
+    -ms-transition: .5 ease-in-out;
+    -o-transition: .5 ease-in-out;
+    transition: .5 ease-in-out;
+}
+
+.taskmobile {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.taskmobile a:hover {
+    color: #adadad;
+}
+
+.taskmobile a:active {
+    color: #646464
+}
+
 .title {
         font-size: 1.5rem;
     }
@@ -52,16 +115,11 @@
 
 }
 
-.menubutton1 {
-    display: none
-}
-
-.menucontent1 {
-    display: none}
 
 .card {
   flex: 1 1 100%; 
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -221,6 +279,18 @@ button {
 
 .menubutton #menucontent{
     display: none;
+    background-color: hsl(0, 0%, 95%);
+    position: absolute;
+    top: 120%;
+    left: auto;
+    right: 0%;
+    transform: translateX(20px);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+.menubutton #menunavcontent{
+    display:none;
     background-color: hsl(0, 0%, 95%);
     position: absolute;
     top: 120%;
