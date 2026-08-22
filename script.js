@@ -16,3 +16,9 @@ function showBar() {
         isShow = 0
     }
 }
+
+(function newFact() {
+  var facts = ['Nice Catch', 'No worries!', 'Basically AI', 'Intuition Huh?', 'Rather Be', 'I choose peace', 'why?', 'IT IS YOUU!'];
+  var randomFact = Math.floor(Math.random() * facts.length);
+  document.getElementById('factDisplay').innerHTML = facts[randomFact];
+})()

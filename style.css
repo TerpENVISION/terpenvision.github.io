@@ -40,7 +40,8 @@
     min-width: 100px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
 }
-.navcontent a {
+
+.navcontent a { 
     display: none;
 }
 
@@ -49,16 +50,18 @@
 }
 
 .navmo {
-    align-items: center;
     background-color: #ffffff;
+    width: 100%;
     color: #000000;
     box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .taskmobile {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    position: absolute;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
     bottom: 0;
     padding: 20px;
 }
@@ -87,7 +90,7 @@
 }
 
 .taskmobile {
-  position: absolute;
+  position: fixed;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
@@ -133,6 +136,7 @@ body {
     box-sizing: border-box;
     color: #090900;
     z-index: 0;
+    
 }
 
 nav {
@@ -166,6 +170,8 @@ button {
     margin-inline: 20px;
     position: relative;
 }
+
+
 
 .navcontent ul {
     display: flex;
@@ -238,28 +244,70 @@ button {
     color: #adadad;
 }
 
-.title span {
+.titlespan {
+    padding-left: 20px;
     color: #68020f;
     font-family: 'Clear Sans Medium', sans-serif;
     font-weight: 900;
+    font-size: 40px;
 }
 
-
-#landing {
-    background: #ededed;
-    background: linear-gradient(180deg, rgba(237, 237, 237, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
-    color: #f9f9f9;
-    height: calc(90vh);
-    width: 100vw;
+.landing {
+    padding-top: 60px;
+    background: #FFFFFF;
+background: linear-gradient(73deg, rgba(255, 255, 255, 1) 57%, rgba(255, 227, 227, 1) 100%);
+    height: calc(100px);
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-direction: row;
-    -webkit-box-shadow: 1px 19px 25px 9px rgba(0,0,0,0.71);
-    -moz-box-shadow: 1px 19px 25px 9px rgba(0,0,0,0.71);
-    box-shadow: 1px 19px 25px 9px rgba(0,0,0,0.71);
     }
 
+.overlogo {
+    position: absolute;
+    max-width: 20%;
+
+}
+    
+.slider-wrapper {
+    position: flex;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 7;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    column-gap: 1rem;
+
+}
+
+.newinf {
+    padding-top: 4%;
+    font-family:'Clear Sans Medium', sans-serif;
+}
 
 .menubutton button{
     background-color: #ffffff;
@@ -301,6 +349,31 @@ button {
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
 }
 
+.pattern-background {
+position: relative;
+overflow: hidden;
+background-color: #fff;
+mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 75%);
+-webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 75%);
+mask-size: 100% 100%;
+-webkit-mask-size: 100% 100%;
+mask-repeat: no-repeat;
+-webkit-mask-repeat: no-repeat;
+}
+
+.pattern-background::before {
+content: "";
+position: absolute;
+inset: -100%;
+transform: rotate(75deg);
+transform-origin: center;
+background-color: #fff;
+opacity: 0.1;
+background-image: conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg);
+background-position: 0 0, 18px 31px, 0 0, 18px 31px, 18px 0, 0 31px;
+background-size: 36px 62px;
+}
+
 .project-link {
     width: 150px;
     margin-top: auto;
@@ -310,4 +383,15 @@ button {
 img {
   max-width: 100%;
   height: auto;
+}
+
+footer {
+    background-color: #101010;
+    color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
 }
