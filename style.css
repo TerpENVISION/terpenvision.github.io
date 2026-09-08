@@ -101,6 +101,29 @@
   max-width: 100%;
 }
 
+article a{
+    color:#333333;
+    text-decoration: none;
+    font-size: calc(0.8rem);
+}
+
+article li{
+    margin-left: 15px;
+}
+
+article {
+    margin: 15px;
+    max-width: calc(500px);
+    font-size: calc(0.8rem);
+    margin-left: 12px;
+    background-color: #f6f6f6;
+    border-left: 12px solid #970000;
+    padding: 14px;
+    padding-top: 1px;
+    text-decoration: none;
+    display: flex;
+}
+
 .taskmobile a:hover {
     color: #adadad;
 }
@@ -120,6 +143,7 @@
 }
 
 
+
 .card {
   flex: 1 1 100%; 
 }
@@ -135,6 +159,9 @@ html {
 
 body {
     margin: 0;
+    background-color: #ffffff;
+    opacity: 0.8;
+    opacity: 1;
     min-height: 100vh;
     position: relative;
     overflow: auto;
@@ -146,24 +173,25 @@ body {
     z-index: 0;
 }
 
-body::before {
-  content: "";
-  position: absolute;
-  inset: -100%;
-  transform: rotate(70deg);
-  transform-origin: center;
-  background-color: #f6f6fa;
-  opacity: 0.3;
-  background-image: 
-    repeating-linear-gradient(to right, transparent 0, transparent 6.666666666666667px, #f6f6fa 6.666666666666667px, #f6f6fa 20px, transparent 20px, transparent 26.666666666666668px), 
-    repeating-linear-gradient(to bottom, transparent 0, transparent 6.666666666666667px, #f6f6fa 6.666666666666667px, #f6f6fa 20px, transparent 20px, transparent 26.666666666666668px), 
-    linear-gradient(to bottom, #ab0000 2.4px, transparent 2.4px), 
-    linear-gradient(to right, #ab0000 2.4px, transparent 2.4px);
-  background-size: 100% 100%, 100% 100%, 80px 80px, 80px 80px;
-  background-position: 0 0, 0 0, 0 -0.8px, -0.8px 0;
-  z-index: -1; /* Keeps pattern behind page content */
-  overflow: hidden;
+.pattern-background {
+position: relative;
+overflow: hidden;
+background-color: #ffffff;
+z-index: 0;
+}
 
+.pattern-background::before {
+content: "";
+position: absolute;
+inset: -100%;
+transform: rotate(25deg);
+transform-origin: center;
+background-color: #ffffff;
+opacity: 0.8;
+background-image:  repeating-linear-gradient(to right, transparent 0, transparent 6.666666666666667px, #ffffff 6.666666666666667px, #ffffff 20px, transparent 20px, transparent 26.666666666666668px), repeating-linear-gradient(to bottom, transparent 0, transparent 6.666666666666667px, #ffffff 6.666666666666667px, #ffffff 20px, transparent 20px, transparent 26.666666666666668px), linear-gradient(to bottom, #c13333 2.4px, transparent 2.4px), linear-gradient(to right, #c13333 2.4px, transparent 2.4px) ;
+background-size: 100% 100%, 100% 100%, 80px 80px, 80px 80px;
+background-position: 0 0, 0 0, 0 -0.8px, -0.8px 0;
+z-index: -1;
 }
 
 nav {
@@ -290,36 +318,59 @@ button {
     justify-content: left;
     align-items: center;
     flex-direction: row;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
     }
 
 .landing2 {
-    margin-top: 12px;
+    margin-top: 15px;
     width: 98%;
     background: white;
-    justify-content: center;
-    align-items: center;
     overflow: auto;
     overflow-y: auto;
     display: flex;
     margin-left:auto;
     margin-right:auto;
-    border-radius: 8px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 5px;
 }
 
-
 .congt {
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top:12px;
     width: 98%;
-    margin-top: 12px;
     background: white;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
-    display: flex;
-    margin-left:auto;
     margin-right:auto;
-    border-radius: 8px;
-    margin-bottom: 12px;
+    margin-left:auto;
+    justify-content: left;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    width:98%;
+}
+
+article a{
+    color:#333333;
+    text-decoration: none;
+    font-size: calc(0.8rem);
+}
+
+article li{
+    margin-left: 15px;
+}
+
+article {
+    margin: 15px;
+    max-width: calc(500px);
+    font-size: calc(0.8rem);
+    margin-left: 12px;
+    background-color: #f6f6f6;
+    border-left: 12px solid #970000;
+    padding: 14px;
+    padding-top: 1px;
+    text-decoration: none;
+    display: flex;
 }
 
 .menubutton button{
@@ -336,6 +387,10 @@ button {
     color: black;
     text-decoration: none;
     padding: 10px 15px;
+}
+
+.menubutton a:hover {
+    background-color: #d9d9d9;
 }
 
 .menubutton #menucontent{
@@ -362,30 +417,7 @@ button {
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
 }
 
-.pattern-background {
-position: relative;
-overflow: hidden;
-background-color: #fff;
-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 75%);
--webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 75%);
-mask-size: 100% 100%;
--webkit-mask-size: 100% 100%;
-mask-repeat: no-repeat;
--webkit-mask-repeat: no-repeat;
-}
 
-.pattern-background::before {
-content: "";
-position: absolute;
-inset: -100%;
-transform: rotate(75deg);
-transform-origin: center;
-background-color: #fff;
-opacity: 0.1;
-background-image: conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #791010 0.5deg, #791010 119.5deg, transparent 119.5deg, transparent 120deg);
-background-position: 0 0, 18px 31px, 0 0, 18px 31px, 18px 0, 0 31px;
-background-size: 36px 62px;
-}
 
 .project-link {
     width: 150px;
